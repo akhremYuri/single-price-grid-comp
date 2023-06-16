@@ -1,3 +1,8 @@
+body, html {
+  height: 100%;
+  min-width: 320px;
+}
+
 body {
   font-family: "Karla", serif;
   font-size: 16px;
@@ -14,11 +19,23 @@ h1, h2, h3, h4, h5, h6{
   padding: 0;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.container {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .price {
   max-width: 595px;
   width: 100%;
-  margin: 0 auto;
   border: 1px solid black;
   border-radius: 15px;
   overflow: hidden;
@@ -70,6 +87,25 @@ ul{
   padding: 30px 20px 40px;
 }
 
+@media screen and (max-width: 600px){
+  .price {
+    max-width: 298px; 
+    width: 100%;   
+  }
+
+  .price__condition-block {
+    flex-direction: column;
+  }
+
+  .price__description-block {
+    width: 100%;
+  }
+
+  .price__subscription-block {
+    width: 100%;
+  }
+}
+
 .price__subtitle{
   font-size: 18px;
   font-weight: 700;
@@ -82,7 +118,7 @@ ul{
 
 .position_c{
   position: relative;
-  bottom: 8px;
+  bottom: 6px;
   display: inline-block;
 }
 
@@ -95,4 +131,8 @@ ul{
   box-sizing: content-box;
   font-size: 16px;
   border-radius: 3px;
+}
+
+.price__button:hover{
+  background-color: red;
 }
