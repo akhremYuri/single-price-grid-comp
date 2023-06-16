@@ -77,33 +77,35 @@ ul{
 
 .price__subscription-block{
   background-color:hsl(218, 22%, 67%);
-  width: 50%;
+  /* width: 50%; */
+  flex: 1;
   padding: 30px 20px 40px;
 }
 
 .price__description-block {
   background-color:hsl(218, 22%, 67%);
-  width: 50%;
+  /* width: 50%; */
+  flex: 1;
   padding: 30px 20px 40px;
 }
 
 @media screen and (max-width: 600px){
   .price {
     max-width: 298px; 
-    width: 100%;   
+    /* width: 100%;    */
   }
 
   .price__condition-block {
     flex-direction: column;
   }
 
-  .price__description-block {
+  /* .price__description-block {
     width: 100%;
-  }
+  } */
 
-  .price__subscription-block {
+  /* .price__subscription-block {
     width: 100%;
-  }
+  } */
 }
 
 .price__subtitle{
