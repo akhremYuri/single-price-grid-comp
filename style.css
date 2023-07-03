@@ -118,6 +118,10 @@ ul{
   font-size: 36px;
 }
 
+.va_middle {
+  vertical-align: middle;
+}
+
 .position_c{
   position: relative;
   bottom: 6px;
